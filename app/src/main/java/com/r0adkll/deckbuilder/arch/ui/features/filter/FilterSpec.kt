@@ -227,8 +227,8 @@ data class FilterSpec(val specs: List<Spec>) : Parcelable {
         }
 
 
-        fun createAll(expansions: List<Expansion>,
-                      visibility: FilterUi.ExpansionVisibility): FilterSpec {
+        private fun createAll(expansions: List<Expansion>,
+                              visibility: FilterUi.ExpansionVisibility): FilterSpec {
             return FilterSpec(
                     listOf(
                             Spec.FieldSpec(),
@@ -270,7 +270,7 @@ data class FilterSpec(val specs: List<Spec>) : Parcelable {
         }
 
 
-        fun createPokemon(expansions: List<Expansion>,
+        private fun createPokemon(expansions: List<Expansion>,
                           visibility: FilterUi.ExpansionVisibility): FilterSpec {
             return FilterSpec(
                     listOf(
@@ -302,7 +302,7 @@ data class FilterSpec(val specs: List<Spec>) : Parcelable {
         }
 
 
-        fun createTrainer(expansions: List<Expansion>,
+        private fun createTrainer(expansions: List<Expansion>,
                           visibility: FilterUi.ExpansionVisibility): FilterSpec {
             return FilterSpec(
                     listOf(
@@ -323,7 +323,7 @@ data class FilterSpec(val specs: List<Spec>) : Parcelable {
         }
 
 
-        fun createEnergy(expansions: List<Expansion>,
+        private fun createEnergy(expansions: List<Expansion>,
                          visibility: FilterUi.ExpansionVisibility): FilterSpec {
             return FilterSpec(
                     listOf(
